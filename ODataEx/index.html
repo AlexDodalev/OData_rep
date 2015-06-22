@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+	<title>Northwind ODATA Demo</title>
+	<script
+		src = "https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+		id = "sap-ui-bootstrap"
+		data-sap-ui-libs="sap.m"
+		data-sap-ui-resourceroots = '{
+			"com.example.ODataEx" : "./",
+			"views" : "./views",
+			"utils" : "./utils"
+		}'
+		data-sap-ui-theme="sap_bluecrystal">
+	</script>
+
+	<script>
+		new sap.m.Shell("shellId",{
+			app: new sap.ui.core.ComponentContainer({
+				height: "100%",
+				name: com.example.ODataEx //look for Component.js
+			})//end of ComponentContainer
+		}).placeAt("content");	
+
+	</script>
+</head>
+<body class="sapUiBody">
+	<div id="content">
+		
+	</div>
+</body>
+</html>
